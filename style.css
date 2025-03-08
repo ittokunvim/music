@@ -62,6 +62,11 @@ hr {
 	cursor: pointer;
 }
 
+#music .item .title i {
+	font-size: 0.8rem;
+	margin-right: 0.5rem;
+}
+
 #music .item .author {
 	font-size: 0.8rem;
 	color: var(--color-text-primary);
