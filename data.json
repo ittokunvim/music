@@ -1,7 +1,7 @@
 [
 	{
 		"title": "The Other Side of the Wall",
-		"author": "Void_Chords feat.MARU",
+		"artist": "Void_Chords feat.MARU",
 		"references": [
 			"https://www.youtube.com/watch?v=4m0_FpkfmVY",
 			"https://lantis.jp/release-item/LACM-14624.html"
@@ -10,7 +10,7 @@
 	},
 	{
 		"title": "なんとなく。",
-		"author": "SHISHAMO",
+		"artist": "SHISHAMO",
 		"references": [
 			"https://www.youtube.com/watch?v=Ih1BdopN41Y"
 		],
@@ -18,7 +18,7 @@
 	},
 	{
 		"title": "サヨナラサラバ",
-		"author": "BiSH",
+		"artist": "BiSH",
 		"references": [
 			"https://www.youtube.com/watch?v=HJV4e2mgS_E"
 		],
@@ -26,7 +26,7 @@
 	},
 	{
 		"title": "ダンボールの色",
-		"author": "MAISONdes",
+		"artist": "MAISONdes",
 		"references": [
 			"https://www.youtube.com/watch?v=9vLxUqDa8aU",
 			"https://www.uta-net.com/song/326361/"
@@ -35,7 +35,7 @@
 	},
 	{
 		"title": "Rise",
-		"author": "菅野よう子",
+		"artist": "菅野よう子",
 		"references": [
 			"https://www.youtube.com/watch?v=FKXMa9kbE8Y"
 		],
@@ -43,7 +43,7 @@
 	},
 	{
 		"title": "色彩",
-		"author": "yama",
+		"artist": "yama",
 		"references": [
 			"https://www.youtube.com/watch?v=E9Dru15yq9w",
 			"https://www.uta-net.com/song/326161/"
@@ -52,7 +52,7 @@
 	},
 	{
 		"title": "Radio song",
-		"author": "LOVE PSYCHEDELICO",
+		"artist": "LOVE PSYCHEDELICO",
 		"references": [
 			"https://www.youtube.com/watch?v=aVUuehTNd5Q"
 		],
@@ -60,7 +60,7 @@
 	},
 	{
 		"title": "KICKBACK",
-		"author": "米津玄師",
+		"artist": "米津玄師",
 		"references": [
 			"https://www.youtube.com/watch?v=M2cckDmNLMI"
 		],
@@ -68,7 +68,7 @@
 	},
 	{
 		"title": "Hot milk",
-		"author": "にしな",
+		"artist": "にしな",
 		"references": [
 			"https://www.youtube.com/watch?v=zDKY3yeTow4",
 			"https://www.uta-net.com/song/327615/"
@@ -77,7 +77,7 @@
 	},
 	{
 		"title": "コネクト",
-		"author": "ClariS",
+		"artist": "ClariS",
 		"references": [
 			"https://www.youtube.com/watch?v=7EuTPTVpuNI",
 			"https://www.uta-net.com/song/106990/"
@@ -86,7 +86,7 @@
 	},
 	{
 		"title": "Believe",
-		"author": "みさき",
+		"artist": "みさき",
 		"references": [
 			"https://www.youtube.com/watch?v=WZR5A7y_Q6w"
 		],
@@ -94,7 +94,7 @@
 	},
 	{
 		"title": "星間飛行",
-		"author": "中島愛",
+		"artist": "中島愛",
 		"references": [
 			"https://www.youtube.com/watch?v=weWIUylAq0s"
 		],

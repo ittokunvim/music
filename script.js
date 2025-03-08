@@ -7,7 +7,7 @@ const DocsTitle = "ミュージック一覧";
 // Json attributes
 // {
 //  "title": "string",
-//  "author": "string",
+//  "artist": "string",
 //  "references": string[],
 //  "createdAt": "string"
 // }
@@ -36,21 +36,21 @@ async function createMusicList() {
 	jsonData.forEach(async (data) => {
 		const myMusicItem = document.createElement("div");
 		const myItemTitle = await createItemTitle(data.title);
-		const myItemAuthor = document.createElement("div");
+		const myItemArtist = document.createElement("div");
 		const myItemCreatedAt = document.createElement("div");
 		const myItemReferences = await createItemReferences(data.references);
 
 		addAudioEvent(myItemTitle);
 
 		myMusicItem.classList.add("item");
-		myItemAuthor.classList.add("author");
+		myItemArtist.classList.add("artist");
 		myItemCreatedAt.classList.add("createdAt");
 
-		myItemAuthor.textContent = data.author;
+		myItemArtist.textContent = data.artist;
 		myItemCreatedAt.textContent = `${data.createdAt}に作成`;
 
 		myMusicItem.appendChild(myItemTitle);
-		myMusicItem.appendChild(myItemAuthor);
+		myMusicItem.appendChild(myItemArtist);
 		myMusicItem.appendChild(myItemCreatedAt);
 		myMusicItem.appendChild(myItemReferences);
 
