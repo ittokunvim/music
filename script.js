@@ -6,6 +6,7 @@ const DocsTitle = "ミュージック一覧";
 
 // Json attributes
 // {
+//  "path": "string",
 //  "title": "string",
 //  "artist": "string",
 //  "references": string[],
@@ -40,7 +41,7 @@ async function createMusicList() {
 		const myItemCreatedAt = document.createElement("div");
 		const myItemReferences = await createItemReferences(data.references);
 
-		addAudioEvent(myItemTitle);
+		addAudioEvent(myItemTitle, data.path);
 
 		myMusicItem.classList.add("item");
 		myItemArtist.classList.add("artist");
@@ -94,11 +95,10 @@ async function createItemReferences(references) {
 	return myDetails;
 }
 
-async function addAudioEvent(title) {
+async function addAudioEvent(title, path) {
 	title.addEventListener("click", () => {
 		const playIcon = title.querySelector("i");
-		const text = title.querySelector("span");
-		const src = `./music/${text.textContent}.mp3`;
+		const src = path;
 
 		title.dataset.playing = title.dataset.playing === "true" ? "false" : "true";
 		audio.src = src;
