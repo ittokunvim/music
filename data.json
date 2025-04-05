@@ -1,0 +1,372 @@
+[
+	{
+		"path": "music/MUS_0001.mp3",
+		"title": "Believe",
+		"artist": "みさき",
+		"references": [
+			"https://www.youtube.com/watch?v=WZR5A7y_Q6w"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0002.mp3",
+		"title": "CAT'S  EYE",
+		"artist": "杏里",
+		"references": [
+			"https://www.youtube.com/watch?v=yiUuVRBaCy0"
+		],
+		"createdAt": "1992"
+	},
+	{
+		"path": "music/MUS_0003.mp3",
+		"title": "Dance In The Game",
+		"artist": "ZAQ",
+		"references": [
+			"https://www.youtube.com/watch?v=uddBqgwGDHc"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0004.mp3",
+		"title": "Drown",
+		"artist": "milet",
+		"references": [
+			"https://www.youtube.com/watch?v=ce_9Ze-gf2o"
+		],
+		"createdAt": "2019"
+	},
+	{
+		"path": "music/MUS_0005.mp3",
+		"title": "ETERNAL WIND〜ほほえみは光る風の中〜",
+		"artist": "森口博子",
+		"references": [
+			"https://www.youtube.com/watch?v=1gyFVYI62TY"
+		],
+		"createdAt": "1991"
+	},
+	{
+		"path": "music/MUS_0006.mp3",
+		"title": "LIES & TIES",
+		"artist": "Void_Chords feat. Yui Mugino",
+		"references": [
+			"https://www.youtube.com/watch?v=wgrswjUZLYc"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0007.mp3",
+		"title": "Last regret",
+		"artist": "彩菜",
+		"references": [
+			"https://www.youtube.com/watch?v=GBw41SyS4Ag"
+		],
+		"createdAt": "2006"
+	},
+	{
+		"path": "music/MUS_0008.mp3",
+		"title": "Long shot",
+		"artist": "前島麻由",
+		"references": [
+			"https://www.youtube.com/watch?v=p8X5hG51jbA"
+		],
+		"createdAt": "2021"
+	},
+	{
+		"path": "music/MUS_0009.mp3",
+		"title": "Nyan Cat [original]",
+		"artist": "nyan cat",
+		"references": [
+			"https://www.youtube.com/watch?v=2yJgwwDcgV8"
+		],
+		"createdAt": "2011"
+	},
+	{
+		"path": "music/MUS_0010.mp3",
+		"title": "Polaris",
+		"artist": "Wake Up, Girls!",
+		"references": [
+			"https://www.youtube.com/watch?v=CKsy63W5sd0"
+		],
+		"createdAt": "2018"
+	},
+	{
+		"path": "music/MUS_0011.mp3",
+		"title": "Red fraction",
+		"artist": "MELL",
+		"references": [
+			"https://www.youtube.com/watch?v=y2zBv45p1DU"
+		],
+		"createdAt": "2006"
+	},
+	{
+		"path": "music/MUS_0012.mp3",
+		"title": "Repaint",
+		"artist": "Fear, and Loathing in Las Vegas",
+		"references": [
+			"https://www.youtube.com/watch?v=FG0kr-Gasno"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0013.mp3",
+		"title": "River",
+		"artist": "Anonymouz",
+		"references": [
+			"https://www.youtube.com/watch?v=V-uTOWL8X0w"
+		],
+		"createdAt": "2023"
+	},
+	{
+		"path": "music/MUS_0014.mp3",
+		"title": "Sugar Sweet Nightmare",
+		"artist": "堀江由衣",
+		"references": [
+			"https://www.youtube.com/watch?v=5aOLQQ9kPdk"
+		],
+		"createdAt": "2010"
+	},
+	{
+		"path": "music/MUS_0015.mp3",
+		"title": "YONA YONA DANCE",
+		"artist": "和田アキ子",
+		"references": [
+			"https://www.youtube.com/watch?v=zh-4M5blbiI"
+		],
+		"createdAt": "2021"
+	},
+	{
+		"path": "music/MUS_0016.mp3",
+		"title": "Yin Yang",
+		"artist": "桑田佳祐",
+		"references": [
+			"https://www.youtube.com/watch?v=VTbfqbFHCPY"
+		],
+		"createdAt": "2013"
+	},
+	{
+		"path": "music/MUS_0017.mp3",
+		"title": "dis",
+		"artist": "有坂美香",
+		"references": [
+			"https://www.youtube.com/watch?v=JW-30MXOXfE"
+		],
+		"createdAt": "1999"
+	},
+	{
+		"path": "music/MUS_0018.mp3",
+		"title": "only my railgun",
+		"artist": "fripSide",
+		"references": [
+			"https://www.youtube.com/watch?v=ZhIxg6_Femo"
+		],
+		"createdAt": "2009"
+	},
+	{
+		"path": "music/MUS_0019.mp3",
+		"title": "rise",
+		"artist": "Origa",
+		"references": [
+			"https://www.youtube.com/watch?v=FKXMa9kbE8Y"
+		],
+		"createdAt": "2004"
+	},
+	{
+		"path": "music/MUS_0020.mp3",
+		"title": "veil",
+		"artist": "須田景凪",
+		"references": [
+			"https://www.youtube.com/watch?v=n7VZxg9pxkg"
+		],
+		"createdAt": "2019"
+	},
+	{
+		"path": "music/MUS_0021.mp3",
+		"title": "うる星やつら　ラムが歌う　ラムのラブソング",
+		"artist": "ラム",
+		"references": [
+			"https://www.youtube.com/watch?v=Y0zm2QY2fuY"
+		],
+		"createdAt": "1982"
+	},
+	{
+		"path": "music/MUS_0022.mp3",
+		"title": "なんとなく最低な日々",
+		"artist": "ももいろクローバーZ",
+		"references": [
+			"https://www.youtube.com/watch?v=bUDFwiqOr8A"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0023.mp3",
+		"title": "コネクト",
+		"artist": "ClariS",
+		"references": [
+			"https://www.youtube.com/watch?v=7EuTPTVpuNI",
+			"https://www.uta-net.com/song/106990/"
+		],
+		"createdAt": "2011"
+	},
+	{
+		"path": "music/MUS_0024.mp3",
+		"title": "サヨナラサラバ",
+		"artist": "BiSH",
+		"references": [
+			"https://www.youtube.com/watch?v=HJV4e2mgS_E"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0025.mp3",
+		"title": "ショービズ",
+		"artist": "ももいろクローバーZ",
+		"references": [
+			"https://www.youtube.com/watch?v=d70uJq2uZK4"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0026.mp3",
+		"title": "ダイナマイト",
+		"artist": "Superfly",
+		"references": [
+			"https://www.youtube.com/watch?v=O_qzfLv01xw"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0027.mp3",
+		"title": "ツバサ",
+		"artist": "ナナホシ",
+		"references": [
+			"https://www.youtube.com/watch?v=s9u7oQ7aaV0"
+		],
+		"createdAt": "2024"
+	},
+	{
+		"path": "music/MUS_0028.mp3",
+		"title": "ハッピーエンド",
+		"artist": "SHISHAMO",
+		"references": [
+			"https://www.youtube.com/watch?v=cXGavNpV1FE"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0029.mp3",
+		"title": "マトリョシカ",
+		"artist": "HACHI",
+		"references": [
+			"https://www.youtube.com/watch?v=HOz-9FzIDf0"
+		],
+		"createdAt": "2013"
+	},
+	{
+		"path": "music/MUS_0030.mp3",
+		"title": "今夜はブギー・バック",
+		"artist": "KREVA",
+		"references": [
+			"https://www.youtube.com/watch?v=1Scy6u15QFM"
+		],
+		"createdAt": "2006"
+	},
+	{
+		"path": "music/MUS_0031.mp3",
+		"title": "僕の戦争",
+		"artist": "神聖かまってちゃん",
+		"references": [
+			"https://www.youtube.com/watch?v=goXKlOozyx8"
+		],
+		"createdAt": "2021"
+	},
+	{
+		"path": "music/MUS_0032.mp3",
+		"title": "回る空うさぎ (Orangestar) ／ COVER",
+		"artist": "ダズビー",
+		"references": [
+			"https://www.youtube.com/watch?v=FNuGB562C2Q"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0033.mp3",
+		"title": "嵐の中で輝いて",
+		"artist": "米倉千尋",
+		"references": [
+			"https://www.youtube.com/watch?v=vwGBwi82E7g"
+		],
+		"createdAt": "1996"
+	},
+	{
+		"path": "music/MUS_0034.mp3",
+		"title": "恋愛サーキュレーション",
+		"artist": "花澤香菜",
+		"references": [
+			"https://www.youtube.com/watch?v=Dwf4gBDDjUk"
+		],
+		"createdAt": "2010"
+	},
+	{
+		"path": "music/MUS_0035.mp3",
+		"title": "星間飛行",
+		"artist": "中島愛",
+		"references": [
+			"https://www.youtube.com/watch?v=weWIUylAq0s"
+		],
+		"createdAt": "2008"
+	},
+	{
+		"path": "music/MUS_0036.mp3",
+		"title": "水の星へ愛をこめて",
+		"artist": "森口博子",
+		"references": [
+			"https://www.youtube.com/watch?v=WzjFdq8smRk"
+		],
+		"createdAt": "1998"
+	},
+	{
+		"path": "music/MUS_0037.mp3",
+		"title": "通り雨",
+		"artist": "SHISHAMO",
+		"references": [
+			"https://www.youtube.com/watch?v=S6lKaiQlBAU"
+		],
+		"createdAt": "2021"
+	},
+	{
+		"path": "music/MUS_0038.mp3",
+		"title": "雨燦々",
+		"artist": "King Gnu",
+		"references": [
+			"https://www.youtube.com/watch?v=C47K1TX9PAA"
+		],
+		"createdAt": "2022"
+	},
+	{
+		"path": "music/MUS_0039.mp3",
+		"title": "風と行く道",
+		"artist": "大原ゆい子",
+		"references": [
+			"https://www.youtube.com/watch?v=mUZEnAeUvgA"
+		],
+		"createdAt": "2021"
+	},
+	{
+		"path": "music/MUS_0040.mp3",
+		"title": "高嶺の花子さん",
+		"artist": "back number",
+		"references": [
+			"https://www.youtube.com/watch?v=SII-S-zCg-c"
+		],
+		"createdAt": "2013"
+	},
+	{
+		"path": "music/MUS_0041.mp3",
+		"title": "鳥の詩",
+		"artist": "Lia",
+		"references": [
+			"https://www.youtube.com/watch?v=NtJnix-9niI"
+		],
+		"createdAt": "2000"
+	}
+]
