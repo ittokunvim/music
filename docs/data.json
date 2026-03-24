@@ -1,1 +1,191 @@
-[]
+[
+  {
+    "path": "music/20220601/4321.mp3",
+    "title": "4321",
+    "artist": "足立佳奈",
+    "references": [
+      "https://www.youtube.com/watch?v=JNn6IXc2FQg"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Lobby.mp3",
+    "title": "Lobby",
+    "artist": "Anitta x Missy Elliott",
+    "references": [
+      "https://www.youtube.com/watch?v=2-wvqe91m2c"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Make You Say.mp3",
+    "title": "Make You Say",
+    "artist": "Zedd, Maren Morris & Beauz",
+    "references": [
+      "https://www.youtube.com/watch?v=4HrU1EbataI"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/NIGHT DANCER.mp3",
+    "title": "NIGHT DANCER",
+    "artist": "imase",
+    "references": [
+      "https://www.youtube.com/watch?v=kagoEGKHZvU"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/OCEANS.mp3",
+    "title": "OCEANS",
+    "artist": "ex.KureiYuki's with yui_Summer in COLORZ",
+    "references": [
+      "https://www.youtube.com/watch?v=AeqgsgtoLOA"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/OH HEY.mp3",
+    "title": "OH HEY",
+    "artist": "羊文学 & LÜCY",
+    "references": [
+      "https://www.youtube.com/watch?v=4UBxhHkVV-8"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Presence.mp3",
+    "title": "Presence",
+    "artist": "Superfly",
+    "references": [
+      "https://www.youtube.com/watch?v=WWcu8yJTqHc"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Ready.mp3",
+    "title": "Ready",
+    "artist": "岩田剛典",
+    "references": [
+      "https://www.youtube.com/watch?v=iwSk0dyNni0"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Sonomamano Tsumetasade.mp3",
+    "title": "Sonomamano Tsumetasade",
+    "artist": "indigo la End",
+    "references": [
+      "https://www.youtube.com/watch?v=37tQXkOK6Hk"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Talk that Talk.mp3",
+    "title": "Talk that Talk",
+    "artist": "TWICE",
+    "references": [
+      "https://www.youtube.com/watch?v=k6jqx9kZgPM"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/Tissues.mp3",
+    "title": "Tissues",
+    "artist": "YUNGBULD",
+    "references": [
+      "https://www.youtube.com/watch?v=fI9ztgoZ5yQ"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/なんとなく。.mp3",
+    "title": "なんとなく。",
+    "artist": "SHISHAMO",
+    "references": [
+      "https://www.youtube.com/watch?v=Ih1BdopN41Y"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/エメラルド.mp3",
+    "title": "エメラルド",
+    "artist": "back number",
+    "references": [
+      "https://www.youtube.com/watch?v=8TNusrMIdIQ"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/コズミック.mp3",
+    "title": "コズミック",
+    "artist": "WurtS",
+    "references": [
+      "https://www.youtube.com/watch?v=hGb309yvlnw"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/スターマイン.mp3",
+    "title": "スターマイン",
+    "artist": "Da-iCE",
+    "references": [
+      "https://www.youtube.com/watch?v=YB_St-YN3Y8"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/チノカテ.mp3",
+    "title": "チノカテ",
+    "artist": "ヨルシカ",
+    "references": [
+      "https://www.youtube.com/watch?v=Fq55MMfHoJg"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/フライディ・チャイナタウン.mp3",
+    "title": "フライディ・チャイナタウン",
+    "artist": "BENI",
+    "references": [
+      "https://www.youtube.com/watch?v=IStMsLncT40"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/ベルベットの詩.mp3",
+    "title": "ベルベットの詩",
+    "artist": "back number",
+    "references": [
+      "https://www.youtube.com/watch?v=kNH3eExqWFw"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/リドー.mp3",
+    "title": "リドー",
+    "artist": "ポルカドットスティングレイ",
+    "references": [
+      "https://www.youtube.com/watch?v=wqLRkZkyzas"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/レモンソーダ.mp3",
+    "title": "レモンソーダ",
+    "artist": "家入レオ",
+    "references": [
+      "https://www.youtube.com/watch?v=1df_0pqTabI"
+    ],
+    "createdAt": "2022"
+  },
+  {
+    "path": "music/20220601/深海.mp3",
+    "title": "深海",
+    "artist": "森七菜",
+    "references": [
+		"https://www.youtube.com/watch?v=bBQAD_7zZBk"
+    ],
+    "createdAt": "2022"
+  }
+]

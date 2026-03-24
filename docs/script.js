@@ -10,6 +10,7 @@ const DocsTitle = "ミュージック一覧";
 //  "title": "string",
 //  "artist": "string",
 //  "references": string[],
+//  "albums": string[],
 //  "createdAt": "string"
 // }
 
