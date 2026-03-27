@@ -184,8 +184,674 @@
     "title": "深海",
     "artist": "森七菜",
     "references": [
-		"https://www.youtube.com/watch?v=bBQAD_7zZBk"
+      "https://www.youtube.com/watch?v=bBQAD_7zZBk"
     ],
     "createdAt": "2022"
+  },
+  {
+    "path": "assets/music/20261001/ANIMA -Naked Style.mp3",
+    "title": "ANIMA",
+    "artist": "ReoNa",
+    "references": [
+      "https://www.youtube.com/watch?v=Qo_4XqKwrSM"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/As It Was.mp3",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "references": [
+      "https://www.youtube.com/watch?v=H5v3kku4y6Q"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/A・O・U.mp3",
+    "title": "A・O・U",
+    "artist": "Chara",
+    "references": [
+      "https://www.youtube.com/watch?v=zP8LH1v6ZVI"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Baby I love you so.mp3",
+    "title": "Baby I love you so",
+    "artist": "清水翔太",
+    "references": [
+      "https://www.youtube.com/watch?v=SYpBW6_QQe0"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Be Selfish.mp3",
+    "title": "Be Selfish",
+    "artist": "=LOVE",
+    "references": [
+      "https://www.youtube.com/watch?v=suf7S4AKdmY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Bestie.mp3",
+    "title": "Bestie",
+    "artist": "有華",
+    "references": [
+      "https://www.youtube.com/watch?v=G1RyG2Rubx0"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/CASTLE OF SAND.mp3",
+    "title": "CASTLE OF SAND",
+    "artist": "今市隆二",
+    "references": [
+      "https://www.youtube.com/watch?v=2bmrgfoUQ8E"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/CHAINSAW BLOOD.mp3",
+    "title": "CHAINSAW BLOOD",
+    "artist": "Vaundy",
+    "references": [
+      "https://www.youtube.com/watch?v=FL1QjjkZVm4"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Call me back.mp3",
+    "title": "Call me back",
+    "artist": "松任谷由実",
+    "references": [
+      "https://www.youtube.com/watch?v=oWo-TabDt8w"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Door.mp3",
+    "title": "Door",
+    "artist": "大原櫻子",
+    "references": [
+      "https://www.youtube.com/watch?v=FFjTySz86Cs"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/FEARS.mp3",
+    "title": "FEARS",
+    "artist": "RAMPAGE",
+    "references": [
+      "https://www.youtube.com/watch?v=6J8tFxdlrZc"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Hi High (Japanese Version).mp3",
+    "title": "Hi High (Japanese Version)",
+    "artist": "LOONA",
+    "references": [
+      "https://www.youtube.com/watch?v=846cjX0ZTrk"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/I Don't Think That I Like Her.mp3",
+    "title": "I Don't Think That I Like Her",
+    "artist": "Charlie Puth",
+    "references": [
+      "https://www.youtube.com/watch?v=5hzeGPFuDHY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/KICKBACK.mp3",
+    "title": "KICKBACK",
+    "artist": "米津玄師",
+    "references": [
+      "https://www.youtube.com/watch?v=M2cckDmNLMI"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/LiE LiE LiE.mp3",
+    "title": "LiE LiE LiE",
+    "artist": "BiSH",
+    "references": [
+      "https://www.youtube.com/watch?v=XZApvMky3zY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Love Like A Bomb.mp3",
+    "title": "Love Like A Bomb",
+    "artist": "Tokimeki Records feat. ひかり",
+    "references": [
+      "https://www.youtube.com/watch?v=gbNbZS07wxs"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/MYSTERIOUS.mp3",
+    "title": "MYSTERIOUS",
+    "artist": "女王蜂",
+    "references": [
+      "https://www.youtube.com/watch?v=NMsbwd3SHpk"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Mountain Top.mp3",
+    "title": "Mountain Top",
+    "artist": "ELLEGARDEN",
+    "references": [
+      "https://www.youtube.com/watch?v=mg12LHwCwBo"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/NEW ME.mp3",
+    "title": "NEW ME",
+    "artist": "LiSA",
+    "references": [
+      "https://www.youtube.com/watch?v=UQYMJ-aRlHo"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Pain.mp3",
+    "title": "Pain",
+    "artist": "家入レオ",
+    "references": [
+      "https://www.youtube.com/watch?v=2SvM_9W3Yjc"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Paradise Lost.mp3",
+    "title": "Paradise Lost",
+    "artist": "茅原実里",
+    "references": [
+      "https://www.youtube.com/watch?v=z4eS1TS0J2Y"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Radio song.mp3",
+    "title": "Radio song",
+    "artist": "LOVE PSYCHEDELICO",
+    "references": [
+      "https://www.youtube.com/watch?v=aVUuehTNd5Q"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Running In The Dark.mp3",
+    "title": "Running In The Dark",
+    "artist": "MONKEY MAJIK",
+    "references": [
+      "https://www.youtube.com/watch?v=OEePhdVLEh8"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/SICK LOVE.mp3",
+    "title": "SICK LOVE",
+    "artist": "LOONA",
+    "references": [
+      "https://www.youtube.com/watch?v=iRvO_fhVOIE"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/STAR WALKIN'.mp3",
+    "title": "STAR WALKIN'",
+    "artist": "Lil Nas X",
+    "references": [
+      "https://www.youtube.com/watch?v=HYsz1hP0BFo"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/SeishunKippu.mp3",
+    "title": "SeishunKippu",
+    "artist": "まふまふ",
+    "references": [
+      "https://www.youtube.com/watch?v=R1oGwmHYnUQ"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Setting Sail ～ モダンラブ・東京 ～.mp3",
+    "title": "Setting Sail ～ モダンラブ・東京 ～",
+    "artist": "Awesome City Club",
+    "references": [
+      "https://www.youtube.com/watch?v=yLhPEOdwbyY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Soulコブラツイスト～魂の悶絶.mp3",
+    "title": "Soulコブラツイスト～魂の悶絶",
+    "artist": "桑田佳祐",
+    "references": [
+      "https://www.youtube.com/watch?v=4jn41JBHRbs"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/Squall.mp3",
+    "title": "Squall",
+    "artist": "中山優馬",
+    "references": [
+      "https://www.youtube.com/watch?v=kb0M7msjaYg"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/THE CAN.mp3",
+    "title": "THE CAN",
+    "artist": "KICK THE CAN CREW",
+    "references": [
+      "https://www.youtube.com/watch?v=syHzGYFOORo"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/The Drummer.mp3",
+    "title": "The Drummer",
+    "artist": "Red Hot Chili Pepers",
+    "references": [
+      "https://www.youtube.com/watch?v=aP-oFkZknS4"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/UP to ME.mp3",
+    "title": "UP to ME",
+    "artist": "BiSH",
+    "references": [
+      "https://www.youtube.com/watch?v=8ugD2ODBNIw"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/grace.mp3",
+    "title": "grace",
+    "artist": "FujiiKaze",
+    "references": [
+      "https://www.youtube.com/watch?v=rSYoIuyks8g"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/sha・la・la・la.mp3",
+    "title": "sha・la・la・la",
+    "artist": "宮本浩次",
+    "references": [
+      "https://www.youtube.com/watch?v=exaxgCu8Rqc"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/あいにく.mp3",
+    "title": "あいにく",
+    "artist": "Mel",
+    "references": [
+      "https://www.youtube.com/watch?v=EFsj7ShU4uo"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/くじら 「金木犀」.mp3",
+    "title": "くじら 「金木犀」",
+    "artist": "ASCA",
+    "references": [
+      "https://www.youtube.com/watch?v=nC_slxQM6bg"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/さよならノヴェル.mp3",
+    "title": "さよならノヴェル",
+    "artist": "40mP feat. 綾瀬なりさ",
+    "references": [
+      "https://www.youtube.com/watch?v=N-7jWZ5vtCk"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/すずめ feat.十明.mp3",
+    "title": "すずめ feat.十明",
+    "artist": "RADWIMPS",
+    "references": [
+      "https://www.youtube.com/watch?v=Xs0Lxif1u9E"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/それだけでいい.mp3",
+    "title": "それだけでいい",
+    "artist": "大原櫻子",
+    "references": [
+      "https://www.youtube.com/watch?v=IB-f5wu4vpY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/どんなに君が変わっても僕がどんなふうに変わっても明日が来る君に会うため.mp3",
+    "title": "どんなに君が変わっても僕がどんなふうに変わっても明日が来る君に会うため",
+    "artist": "BiSH",
+    "references": [
+      "https://www.youtube.com/watch?v=8cIrMt69IrU"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/わかっちゃない.mp3",
+    "title": "わかっちゃない",
+    "artist": "MAISONdes",
+    "references": [
+      "https://www.youtube.com/watch?v=ZM4_JSt4-ig"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/アイヲトウ.mp3",
+    "title": "アイヲトウ",
+    "artist": "miwa",
+    "references": [
+      "https://www.youtube.com/watch?v=fDyBoX9JpnM"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/アナログライフ.mp3",
+    "title": "アナログライフ",
+    "artist": "imase",
+    "references": [
+      "https://www.youtube.com/watch?v=V3E-FUBN0rU"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/アミ feat.和ぬか.mp3",
+    "title": "アミ feat.和ぬか",
+    "artist": "ayaho",
+    "references": [
+      "https://www.youtube.com/watch?v=62WtfAEjssc"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/イントロは終わり.mp3",
+    "title": "イントロは終わり",
+    "artist": "水槽",
+    "references": [
+      "https://www.youtube.com/watch?v=mLzWDNXzaro"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/インナアチャイルド.mp3",
+    "title": "インナアチャイルド",
+    "artist": "理芽",
+    "references": [
+      "https://www.youtube.com/watch?v=QhP2Ko2wEjY"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/カナタハルカ.mp3",
+    "title": "カナタハルカ",
+    "artist": "RADWIMPS",
+    "references": [
+      "https://www.youtube.com/watch?v=TDi-hGRYX6g"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/スカー.mp3",
+    "title": "スカー",
+    "artist": "キタニタツヤ",
+    "references": [
+      "https://www.youtube.com/watch?v=pb_fwnVamdI"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/ダンボールの色.mp3",
+    "title": "ダンボールの色",
+    "artist": "MAISONdes",
+    "references": [
+      "https://www.youtube.com/watch?v=9vLxUqDa8aU"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/ティンカーベル.mp3",
+    "title": "ティンカーベル",
+    "artist": "水曜日のカンパネラ",
+    "references": [
+      "https://www.youtube.com/watch?v=u0kjE4heEvk"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/ドメスティックでバイオレンス.mp3",
+    "title": "ドメスティックでバイオレンス",
+    "artist": "Ado",
+    "references": [
+      "https://www.youtube.com/watch?v=iRMYLKIWyUk"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/ブルーノート.mp3",
+    "title": "ブルーノート",
+    "artist": "水槽",
+    "references": [
+      "https://www.youtube.com/watch?v=GNskCCDIpig"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/ムスクの香り.mp3",
+    "title": "ムスクの香り",
+    "artist": "the shes gone",
+    "references": [
+      "https://www.youtube.com/watch?v=oHsmk5Ct-rA"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/一心同体.mp3",
+    "title": "一心同体",
+    "artist": "きゃりーぱみゅぱみゅ",
+    "references": [
+      "https://www.youtube.com/watch?v=D5LF3WChRrA"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/可不 キュートなカノジョ.mp3",
+    "title": "可不 キュートなカノジョ",
+    "artist": "syudou",
+    "references": [
+      "https://www.youtube.com/watch?v=oFmup8lxUHw"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/土曜日のわたしたちは.mp3",
+    "title": "土曜日のわたしたちは",
+    "artist": "LiSA",
+    "references": [
+      "https://www.youtube.com/watch?v=WkBQ6svC-Ms"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/夏枯れ.mp3",
+    "title": "夏枯れ",
+    "artist": "ずっと真夜中でいいのに。",
+    "references": [
+      "https://www.youtube.com/watch?v=Nmemc-b6cdU"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/彩り.mp3",
+    "title": "彩り",
+    "artist": "King & Prince",
+    "references": [
+      "https://www.youtube.com/watch?v=U4fSjh7ABDE&vl=ja"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/恋と愛のその間には.mp3",
+    "title": "恋と愛のその間には",
+    "artist": "NMB48",
+    "references": [
+      "https://www.youtube.com/watch?v=cQvpM1XMxFI"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/愛のせい.mp3",
+    "title": "愛のせい",
+    "artist": "大原櫻子",
+    "references": [
+      "https://www.youtube.com/watch?v=_QGrbJubV0o"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/愛のネタバレ.mp3",
+    "title": "愛のネタバレ",
+    "artist": "クリープハイプ",
+    "references": [
+      "https://www.youtube.com/watch?v=vuZcPTxE9p8"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/死生活.mp3",
+    "title": "死生活",
+    "artist": "syudou",
+    "references": [
+      "https://www.youtube.com/watch?v=nBBIBpHypco"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/残機.mp3",
+    "title": "残機",
+    "artist": "ずっと真夜中でいいのに。",
+    "references": [
+      "https://www.youtube.com/watch?v=6OC92oxs4gA"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/消えてしまいそうです.mp3",
+    "title": "消えてしまいそうです",
+    "artist": "ずっと真夜中でいいのに。",
+    "references": [
+      "https://www.youtube.com/watch?v=OxcnK1s2Fww"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/白い紙飛行機.mp3",
+    "title": "白い紙飛行機",
+    "artist": "真心ブラザーズ",
+    "references": [
+      "https://www.youtube.com/watch?v=9-AHgEmeWBc"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/真っ裸.mp3",
+    "title": "真っ裸",
+    "artist": "和ぬか",
+    "references": [
+      "https://www.youtube.com/watch?v=gWH6ye1gXww"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/祝福.mp3",
+    "title": "祝福",
+    "artist": "YOASOBI",
+    "references": [
+      "https://www.youtube.com/watch?v=3eytpBOkOFA"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/色彩.mp3",
+    "title": "色彩",
+    "artist": "yama",
+    "references": [
+      "https://www.youtube.com/watch?v=E9Dru15yq9w"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/行方知れず.mp3",
+    "title": "行方知れず",
+    "artist": "Ado",
+    "references": [
+      "https://www.youtube.com/watch?v=VQtmqpSE64w"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/車の中から.mp3",
+    "title": "車の中から",
+    "artist": "reGretGirl",
+    "references": [
+      "https://www.youtube.com/watch?v=TEefaX5MHxQ"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/邪魔.mp3",
+    "title": "邪魔",
+    "artist": "syudou",
+    "references": [
+      "https://www.youtube.com/watch?v=GTgMgxtl0Eg"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/雨模様.mp3",
+    "title": "雨模様",
+    "artist": "ツユ",
+    "references": [
+      "https://www.youtube.com/watch?v=9z7g8hsjmxA"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/雲を恋う.mp3",
+    "title": "雲を恋う",
+    "artist": "須田景凪",
+    "references": [
+      "https://www.youtube.com/watch?v=_olv1Sw14_g"
+    ],
+    "createdAt": "2026"
+  },
+  {
+    "path": "assets/music/20261001/飽和.mp3",
+    "title": "飽和",
+    "artist": "Ayase",
+    "references": [
+      "https://www.youtube.com/watch?v=bP3OQzw_fvE"
+    ],
+    "createdAt": "2026"
   }
 ]
