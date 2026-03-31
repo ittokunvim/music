@@ -140,19 +140,29 @@ function getAlbums(jsonData) {
 		.sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/**
+ * ミュージックリストを作成してDOMに追加
+ */
 async function createMusicList() {
 	const jsonData = await fetchJson();
+
+	// JSONデータが空の場合は処理を中止
+	if (!jsonData || jsonData.length === 0) {
+		console.warn("ミュージックデータが見つかりません");
+		return;
+	}
+
 	const myMusicList = document.createElement("div");
 	const myMusicTitle = document.createElement("h2");
 
 	myMusicList.classList.add("list");
 	myMusicTitle.textContent = DocsTitle;
 
-	jsonData.forEach(async (data) => {
+	jsonData.forEach((data) => {
 		const myMusicItem = document.createElement("div");
-		const myItemTitle = await createItemTitle(data.title);
+		const myItemTitle = createItemTitle(data.title);
 		const myItemArtist = document.createElement("div");
-		const myItemReferences = await createItemReferences(data.references);
+		const myItemReferences = createItemReferences(data.references);
 
 		addAudioEvent(myItemTitle, data.path);
 
@@ -172,7 +182,12 @@ async function createMusicList() {
 	music.appendChild(myMusicList);
 }
 
-async function createItemTitle(title) {
+/**
+ * 曲のタイトル要素を作成
+ * @param {string} title - 曲のタイトル
+ * @returns {HTMLElement} - タイトル要素
+ */
+function createItemTitle(title) {
 	const myTitle = document.createElement("div");
 	const mySpan = document.createElement("span");
 	const myPlayIcon = document.createElement("i");
@@ -188,50 +203,64 @@ async function createItemTitle(title) {
 	return myTitle;
 }
 
-async function createItemReferences(references) {
+/**
+ * 参考リンク要素を作成
+ * @param {Array} - 参考リンクのURL配列
+ * @returns {HTMLElement} - 参考リンク要素
+ */
+function createItemReferences(references) {
 	const myDetails = document.createElement("details");
 	const mySummary = document.createElement("summary");
 
 	myDetails.classList.add("references");
 	mySummary.textContent = "参考リンク";
 	myDetails.appendChild(mySummary);
-	references.forEach((reference) => {
-		const myItemReference = document.createElement("a");
-		myItemReference.textContent = reference;
-		myItemReference.href = reference;
-		myDetails.appendChild(myItemReference);
-	});
+
+	if (references && references.length > 0) {
+		references.forEach((reference) => {
+			const myItemReference = document.createElement("a");
+			myItemReference.textContent = reference;
+			myItemReference.href = reference;
+			myItemReference.target = "_blank";
+			myItemReference.rel = "noopener noreferrer";
+			myDetails.appendChild(myItemReference);
+		});
+	}
 
 	return myDetails;
 }
 
-async function addAudioEvent(title, path) {
+/**
+ * 音声再生機能を追加
+ * @param {HTMLElement} title - タイトル要素
+ * @param {string} path - 音声ファイルのパス
+ */
+function addAudioEvent(title, path) {
 	title.addEventListener("click", () => {
 		const playIcon = title.querySelector("i");
-		const src = path;
 
 		title.dataset.playing = title.dataset.playing === "true" ? "false" : "true";
-		audio.src = src;
+		audio.src = path;
 
 		if (title.dataset.playing === "true") {
 			audio.play();
-			audio.dataset.playing = "true";
 			playIcon.classList.remove("fa-play");
 			playIcon.classList.add("fa-pause");
 		} else {
 			audio.pause();
-			audio.dataset.playing = "false";
 			playIcon.classList.remove("fa-pause");
 			playIcon.classList.add("fa-play");
 		}
 	});
 }
 
-if (album != null) {
-	createAlbumList();
-}
+document.addEventListener("DOMContentLoaded", () => {
+	if (album) {
+		createAlbumList();
+	}
 
-if (music != null) {
-	createMusicList();
-}
+	if (music) {
+		createMusicList();
+	}
+});
 
