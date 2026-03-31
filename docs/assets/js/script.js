@@ -3,7 +3,6 @@ const album = document.getElementById("album");
 const audio = new Audio();
 
 const JsonPath = "./data.json";
-const DocsTitle = "ミュージック一覧";
 const AlbumTitle = "アルバム一覧";
 
 // Json attributes
@@ -26,6 +25,82 @@ async function fetchJson() {
 	} catch (error) {
 		console.error("JSONファイルの取得に失敗しました:", error);
 	}
+}
+
+/**
+ * 日付文字列をフォーマット
+ * @param {string} dateStr - 日付文字列（例：20220901）
+ * @returns {string} - フォーマット済みの日付（例：2022年9月）
+ */
+function formatDateToYearMonth(dateStr) {
+	const year = dateStr.substring(0, 4);
+	const month = dateStr.substring(4, 6);
+	const monthInt = parseInt(month, 10);
+	return `${year}年${monthInt}月`;
+}
+
+/**
+ * URLから日付を抽出
+ * @returns {string|null} - 日付文字列（例：20220901）、見つからない場合はnull
+ */
+function getDateFromURL() {
+	const pathname = window.location.pathname;
+	// /20220901のようなパターンから日付を抽出
+	const match = pathname.match(/\/(\d{8})$/);
+	return match ? match[1] : null;
+}
+
+/**
+ * pathから日付を抽出
+ * @param {string} path - ファイルパス（例：assets/music/20220901/4321.mp3）
+ * @returns {string|null} - 日付文字列（例：20220901）、見つからない場合はnull
+ */
+function getDateFromPath(path) {
+	const match = path.match(/(\d{8})/);
+	return match ? match[1] : null;
+}
+
+/**
+ * JSONデータからアルバム情報を抽出・整理
+ * パスの日付情報からアルバムを自動生成
+ * @param {Array} jsonData - JSONから取得した曲データ配列
+ * @returns {Array} - { id, name, titles } 形式のアルバム配列
+ */
+function getAlbums(jsonData) {
+	// アルバム情報を格納するMap（重複排除のため）
+	const albumMap = new Map();
+
+	// 各曲のデータを処理
+	jsonData.forEach((data) => {
+		// パスから日付IDを抽出（例: "assets/music/20220601/..." → "20220601"）
+		const pathMatch = data.path.match(/(\d{8})/);
+		
+		if (pathMatch) {
+			const albumId = pathMatch[1]; // "20220601"
+			
+			// 日付からアルバム名を生成（例: "20220601" → "2022年6月"）
+			const albumName = formatDateToYearMonth(albumId);
+
+			// ユニークキー（日付IDで統一）
+			const key = albumId;
+
+			// アルバムがMapに存在しない場合は初期化
+			if (!albumMap.has(key)) {
+				albumMap.set(key, {
+					id: albumId,
+					name: albumName,
+					titles: [],
+				});
+			}
+			
+			// アルバムに曲のタイトルを追加
+			albumMap.get(key).titles.push(data.title);
+		}
+	});
+
+	// Mapを配列に変換し、日付IDでソート
+	return Array.from(albumMap.values())
+		.sort((a, b) => a.id.localeCompare(b.id));
 }
 
 /**
@@ -96,54 +171,10 @@ async function createAlbumList() {
 }
 
 /**
- * JSONデータからアルバム情報を抽出・整理
- * パスの日付情報からアルバムを自動生成
- * @param {Array} jsonData - JSONから取得した曲データ配列
- * @returns {Array} - { id, name, titles } 形式のアルバム配列
- */
-function getAlbums(jsonData) {
-	// アルバム情報を格納するMap（重複排除のため）
-	const albumMap = new Map();
-
-	// 各曲のデータを処理
-	jsonData.forEach((data) => {
-		// パスから日付IDを抽出（例: "assets/music/20220601/..." → "20220601"）
-		const pathMatch = data.path.match(/(\d{8})/);
-		
-		if (pathMatch) {
-			const albumId = pathMatch[1]; // "20220601"
-			
-			// 日付からアルバム名を生成（例: "20220601" → "2022年6月"）
-			const year = albumId.substring(0, 4);
-			const month = parseInt(albumId.substring(4, 6));
-			const albumName = `${year}年${month}月`;
-
-			// ユニークキー（日付IDで統一）
-			const key = albumId;
-
-			// アルバムがMapに存在しない場合は初期化
-			if (!albumMap.has(key)) {
-				albumMap.set(key, {
-					id: albumId,
-					name: albumName,
-					titles: [],
-				});
-			}
-			
-			// アルバムに曲のタイトルを追加
-			albumMap.get(key).titles.push(data.title);
-		}
-	});
-
-	// Mapを配列に変換し、日付IDでソート
-	return Array.from(albumMap.values())
-		.sort((a, b) => a.id.localeCompare(b.id));
-}
-
-/**
  * ミュージックリストを作成してDOMに追加
  */
 async function createMusicList() {
+	// JSONデータを非同期で取得
 	const jsonData = await fetchJson();
 
 	// JSONデータが空の場合は処理を中止
@@ -152,13 +183,34 @@ async function createMusicList() {
 		return;
 	}
 
+	// URLから日付を取得
+	const dateFromURL = getDateFromURL();
+
+	// URLから日付が取得できない場合は処理を中止
+	if (!dateFromURL) {
+		console.warn("URLから有効な日付が見つかりません");
+		return;
+	}
+
+	// URLの日付に一致するアルバムのみをフィルタリング
+	const filteredData = jsonData.filter((data) => {
+		const dateFromPath = getDateFromPath(data.path);
+		return dateFromPath === dateFromURL;
+	});
+
+	// フィルタ後のデータが空の場合
+	if (filteredData.length === 0) {
+		console.warn(`日付 ${dateFromURL} に一致するアルバムが見つかりません`);
+		return;
+	}
+	
 	const myMusicList = document.createElement("div");
 	const myMusicTitle = document.createElement("h2");
 
 	myMusicList.classList.add("list");
-	myMusicTitle.textContent = DocsTitle;
+	myMusicTitle.textContent = formatDateToYearMonth(dateFromURL);
 
-	jsonData.forEach((data) => {
+	filteredData.forEach((data) => {
 		const myMusicItem = document.createElement("div");
 		const myItemTitle = createItemTitle(data.title);
 		const myItemArtist = document.createElement("div");
