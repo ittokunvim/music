@@ -1,0 +1,44 @@
+name: 機能追加
+description: 新しい機能や改善を提案する
+title: "[Feature] "
+labels:
+  - new feature
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 提案する機能や改善内容を簡潔に記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: background-and-purpose
+    attributes:
+      label: 背景・目的
+      description: 解決したい課題や、この提案が必要な理由を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案する内容
+      description: 実現したい内容や、具体的な対応案を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案
+      description: 検討した別の解決方法があれば記載してください。
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足
+      description: 参考資料、関連する Issue、モックアップなどがあれば記載してください。
+  - type: textarea
+    id: completion-criteria
+    attributes:
+      label: 完了条件
+      description: 完了と判断できる条件を記載してください。
+      placeholder: |
+        - [ ]

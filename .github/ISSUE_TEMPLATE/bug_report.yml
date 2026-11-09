@@ -1,0 +1,50 @@
+name: バグ報告
+description: 不具合や想定外の動作を報告する
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 発生した問題を簡潔に記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 再現手順
+      description: 問題が再現する手順を記載してください。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待する動作
+      description: 本来どのように動作することを期待していたか記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 実際の動作
+      description: 実際に発生した動作やエラーメッセージを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: ブラウザ、OS、デバイスなど、問題の発生に関係しそうな情報を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足
+      description: スクリーンショット、ログ、関連する Issue などがあれば記載してください。
