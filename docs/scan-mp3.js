@@ -5,8 +5,8 @@
 // 既存のJSONファイルがある場合は、データを追加します
 // Usage: node json.js SOURCE_DIR [OUTPUT_FILE]
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // コマンドライン引数を取得
 const sourceDir = process.argv[2];
@@ -14,21 +14,21 @@ const outputFile = process.argv[3];
 
 // ヘルプ表示
 function showHelp() {
-  console.log('Usage: node json.js SOURCE_DIR [OUTPUT_FILE]');
-  console.log('');
-  console.log('Description:');
-  console.log('  Scans a directory for mp3 files and generates a JSON file');
-  console.log('  If the output file already exists, new data will be appended');
-  console.log('');
-  console.log('Arguments:');
-  console.log('  SOURCE_DIR   - Directory containing mp3 files');
-  console.log('  OUTPUT_FILE  - Output JSON file (optional)');
-  console.log('                 If omitted, output to stdout');
-  console.log('');
-  console.log('Examples:');
-  console.log('  node json.js /path/to/mp3');
-  console.log('  node json.js /path/to/mp3 output.json');
-  console.log('  ./json.js /path/to/mp3 music.json');
+  console.log("Usage: node json.js SOURCE_DIR [OUTPUT_FILE]");
+  console.log("");
+  console.log("Description:");
+  console.log("  Scans a directory for mp3 files and generates a JSON file");
+  console.log("  If the output file already exists, new data will be appended");
+  console.log("");
+  console.log("Arguments:");
+  console.log("  SOURCE_DIR   - Directory containing mp3 files");
+  console.log("  OUTPUT_FILE  - Output JSON file (optional)");
+  console.log("                 If omitted, output to stdout");
+  console.log("");
+  console.log("Examples:");
+  console.log("  node json.js /path/to/mp3");
+  console.log("  node json.js /path/to/mp3 output.json");
+  console.log("  ./json.js /path/to/mp3 music.json");
 }
 
 // 引数のチェック
@@ -53,8 +53,8 @@ if (!stats.isDirectory()) {
 // 出力ファイルの親ディレクトリをチェック（書き込み可能か）
 if (outputFile) {
   const outputDir = path.dirname(outputFile);
-  const actualDir = outputDir === '.' ? process.cwd() : outputDir;
-  
+  const actualDir = outputDir === "." ? process.cwd() : outputDir;
+
   if (!fs.existsSync(actualDir)) {
     console.error(`Error: Output directory '${actualDir}' does not exist`);
     process.exit(1);
@@ -65,9 +65,7 @@ if (outputFile) {
 let mp3Files = [];
 try {
   const files = fs.readdirSync(sourceDir);
-  mp3Files = files
-    .filter(file => file.toLowerCase().endsWith('.mp3'))
-    .sort();
+  mp3Files = files.filter((file) => file.toLowerCase().endsWith(".mp3")).sort();
 } catch (error) {
   console.error(`Error reading directory: ${error.message}`);
   process.exit(1);
@@ -89,9 +87,9 @@ const newJson = mp3Files.map((mp3File) => {
   return {
     path: filePath,
     title: filename,
-    artist: 'artist',
-    references: ['reference'],
-    createdAt: '2026'
+    artist: "artist",
+    references: ["reference"],
+    createdAt: "2026",
   };
 });
 
@@ -102,26 +100,36 @@ if (outputFile) {
   // 既存のJSONファイルがあるかチェック
   if (fs.existsSync(outputFile)) {
     try {
-      const existingData = fs.readFileSync(outputFile, 'utf8');
+      const existingData = fs.readFileSync(outputFile, "utf8");
       const existingJson = JSON.parse(existingData);
 
-      // 既存のデータが配列かチェック
-      if (Array.isArray(existingJson)) {
-        // 重複排除（pathで比較）
-        const existingPaths = new Set(existingJson.map(item => item.path));
-        const uniqueNewData = newJson.filter(item => !existingPaths.has(item.path));
-
-        jsonData = [...existingJson, ...uniqueNewData];
-        console.error(`✓ Loaded existing JSON with ${existingJson.length} item(s)`);
-        console.error(`  Adding ${uniqueNewData.length} new item(s) (${newJson.length - uniqueNewData.length} duplicate(s) skipped)`);
-      } else {
-        console.error('Warning: Existing file is not a JSON array. Overwriting...');
-        jsonData = newJson;
+      if (!Array.isArray(existingJson)) {
+        console.error(
+          `Error: Existing file '${outputFile}' must contain a JSON array`,
+        );
+        process.exit(1);
       }
+
+      const existingPaths = new Set(existingJson.map((item) => item.path));
+      const uniqueNewData = newJson.filter(
+        (item) => !existingPaths.has(item.path),
+      );
+
+      jsonData = [...existingJson, ...uniqueNewData];
+      console.error(`Loaded existing JSON with ${existingJson.length} item(s)`);
+      console.error(
+        `Adding ${uniqueNewData.length} new item(s) ` +
+          `(${newJson.length - uniqueNewData.length} duplicate(s) skipped)`,
+      );
     } catch (error) {
-      console.error(`Warning: Could not parse existing JSON: ${error.message}`);
-      console.error('  Overwriting with new data...');
-      jsonData = newJson;
+      if (error instanceof SyntaxError) {
+        console.error(
+          `Error: Existing file '${outputFile}' contains invalid JSON: ${error.message}`,
+        );
+        process.exit(1);
+      }
+
+      throw error;
     }
   } else {
     console.error(`Creating new JSON file: '${outputFile}'`);
@@ -130,8 +138,10 @@ if (outputFile) {
   // ファイルに書き込む
   try {
     const jsonString = JSON.stringify(jsonData, null, 2);
-    fs.writeFileSync(outputFile, jsonString + '\n', 'utf8');
-    console.error(`✓ Successfully wrote ${jsonData.length} item(s) to '${outputFile}'`);
+    fs.writeFileSync(outputFile, jsonString + "\n", "utf8");
+    console.error(
+      `✓ Successfully wrote ${jsonData.length} item(s) to '${outputFile}'`,
+    );
   } catch (error) {
     console.error(`Error writing to file: ${error.message}`);
     process.exit(1);
