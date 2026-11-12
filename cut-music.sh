@@ -62,6 +62,7 @@ echo "Start time: ${START_TIME}s, End time: ${END_TIME}s"
 # Cut the music files
 cut_count=0
 failed=0
+skipped=0
 
 for mp3_file in "$MP3_DIR"/*.mp3 "$MP3_DIR"/*.MP3; do
   # Skip if file doesn't exist
@@ -72,6 +73,12 @@ for mp3_file in "$MP3_DIR"/*.mp3 "$MP3_DIR"/*.MP3; do
   filename=$(basename "$filename" .MP3)
   cut_file="$CUT_DIR/$filename.mp3"
   duration=$((END_TIME - START_TIME))
+
+  if [ -f "$cut_file" ]; then
+    echo "Skipped: $filename.mp3 (already exists)"
+    ((++skipped))
+    continue
+  fi
   
   echo "Cutting: $(basename "$mp3_file") -> $filename.mp3"
   
@@ -85,5 +92,5 @@ for mp3_file in "$MP3_DIR"/*.mp3 "$MP3_DIR"/*.MP3; do
 done
 
 echo ""
-echo "Cutting complete: $cut_count succeeded, $failed failed"
+echo "Cutting complete: $cut_count succeeded, $failed failed, $skipped skipped"
 
