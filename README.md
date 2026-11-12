@@ -24,6 +24,6 @@ mv CUT_DIR docs/assets/music/20220901
 # カレントディレクトリを移動する
 cd docs
 # JSONに音楽の情報を書き込む
-node json.js SOURCE_DIR [OUTPUT_FILE]
+node scan-mp3.js SOURCE_DIR [OUTPUT_FILE]
 ```
 
