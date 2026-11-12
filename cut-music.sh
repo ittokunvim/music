@@ -70,10 +70,10 @@ for mp3_file in "$MP3_DIR"/*.mp3 "$MP3_DIR"/*.MP3; do
   
   # Cut the music file with error handling
   if ffmpeg -i "$mp3_file" -ss "$START_TIME" -t "$END_TIME" -acodec copy "$cut_file" 2>/dev/null; then
-    ((cut_count++))
+    ((++cut_count))
   else
     echo "Error: Failed to cut '$(basename "$mp3_file")'"
-    ((failed++))
+    ((++failed))
   fi
 done
 

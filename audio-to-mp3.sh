@@ -81,7 +81,7 @@ for audio_file in "$AUDIO_DIR"/*; do
     # Skip if mp3 already exists in MP3_DIR
     if [ -f "$mp3_file" ]; then
       echo "Skipped: $(basename "$audio_file") (already exists)"
-      ((skipped++))
+      ((++skipped))
       continue
     fi
     
@@ -89,10 +89,10 @@ for audio_file in "$AUDIO_DIR"/*; do
     
     # Copy the mp3 file
     if cp "$audio_file" "$mp3_file"; then
-      ((copied++))
+      ((++copied))
     else
       echo "Error: Failed to copy '$(basename "$audio_file")'"
-      ((failed++))
+      ((++failed))
     fi
     continue
   fi
@@ -107,7 +107,7 @@ for audio_file in "$AUDIO_DIR"/*; do
   # Skip if mp3 already exists
   if [ -f "$mp3_file" ]; then
     echo "Skipped: $filename.mp3 (already exists)"
-    ((skipped++))
+    ((++skipped))
     continue
   fi
   
@@ -115,10 +115,10 @@ for audio_file in "$AUDIO_DIR"/*; do
   
   # Convert with error handling
   if ffmpeg -i "$audio_file" -vn -ac 2 -ar 44100 -ab 256k -acodec libmp3lame -f mp3 "$mp3_file" 2>/dev/null; then
-    ((converted++))
+    ((++converted))
   else
     echo "Error: Failed to convert '$(basename "$audio_file")'"
-    ((failed++))
+    ((++failed))
   fi
 done
 
