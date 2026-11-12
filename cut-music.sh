@@ -42,6 +42,12 @@ if ! [[ "$START_TIME" =~ ^[0-9]+$ ]] || ! [[ "$END_TIME" =~ ^[0-9]+$ ]]; then
   exit 1
 fi
 
+# 終了時間が開始時間より大きくないかチェック
+if [ "$END_TIME" -le "$START_TIME" ]; then
+  echo "Error: END_TIME must be greater than START_TIME"
+  exit 1
+fi
+
 # Count mp3 files
 mp3_count=$(find "$MP3_DIR" -maxdepth 1 -name "*.mp3" -o -name "*.MP3" | wc -l)
 
@@ -65,11 +71,12 @@ for mp3_file in "$MP3_DIR"/*.mp3 "$MP3_DIR"/*.MP3; do
   filename=$(basename "$mp3_file" .mp3)
   filename=$(basename "$filename" .MP3)
   cut_file="$CUT_DIR/$filename.mp3"
+  duration=$((END_TIME - START_TIME))
   
   echo "Cutting: $(basename "$mp3_file") -> $filename.mp3"
   
   # Cut the music file with error handling
-  if ffmpeg -i "$mp3_file" -ss "$START_TIME" -t "$END_TIME" -acodec copy "$cut_file" 2>/dev/null; then
+  if ffmpeg -i "$mp3_file" -ss "$START_TIME" -t "$duration" -acodec copy "$cut_file" 2>/dev/null; then
     ((++cut_count))
   else
     echo "Error: Failed to cut '$(basename "$mp3_file")'"
